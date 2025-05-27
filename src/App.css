@@ -1,38 +1,365 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  width:100vw;
+  height:auto;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #FFFFFF;
+}
+.main{
+  width:375px;
+  height:812px;
+  background-color: #F7F8F9;
+  border:1px solid black;
+  display:flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.content{
+  width:335px;
+  height:263px;
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  padding-bottom:36px;
+  
+  
+}
+.head{
+  text-align: left;
+font-size:28px;
+font-weight:500;
+line-height: 17px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 1;
+}
+.content p{
+  text-align: left;
+font-size:18px;
+font-weight:normal;
+line-height:26px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 0.6;
+}
+.signup1{
+  width:335px;
+  height:46px;
+  background-color: #6C25FF;
+  font-size:16px;
+font-weight:500;
+line-height: 17px;
+font-family:"Rubik", sans-serif;
+text-align: center;
+color: #FFFFFF;
+border-radius: 6px;
+border:none;
+
+
+}
+.login1{
+   width:335px;
+  height:46px;
+  background-color:#6C25FF4B;
+  font-size:16px;
+font-weight:500;
+line-height: 17px;
+font-family:"Rubik", sans-serif;
+text-align: center;
+color: black;
+border-radius: 6px;
+border:none;
+margin-top:-20px;
+
+
+
+}
+.signup{
+  width:375px;
+  height:812px;
+  background-color: #F7F8F9;
+  border:1px solid black;
+  display:flex;
+  flex-direction: column;
+  font-family:"Rubik", sans-serif;
+ 
+  padding:20px;
+
+
+}
+.signuphead{
+width:188px;
+  font-size:28px;
+font-weight:500;
+line-height: 36px;
+font-family:"Rubik", sans-serif;
+text-align: left;
+color: black;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-container {
+  width: 325px;
+  margin-top:25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-family:"Rubik", sans-serif;
+  margin-bottom: 20px;
 }
+
+label {
+  width:fit-content;
+  font-size: 12px;
+  color: #6C25FF;
+  margin-bottom: -7px;
+  background-color:white;
+  font-family:"Rubik", sans-serif;
+  z-index:245677;
+  margin-left:10px;
+}
+
+label span {
+  color: red;
+  margin-left: 2px;
+  font-family:"Rubik", sans-serif;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: black;
+  font-family:"Rubik", sans-serif;
+}
+.form-group.horizontal {
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+.radio-label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.radio-label span {
+  color: red;
+  margin-left: 2px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-radio {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.radio-option input[type="radio"]:checked + .custom-radio {
+  border-color: #6C25FF;
+}
+
+.radio-option input[type="radio"]:checked + .custom-radio::before {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  height: 8px;
+  width: 8px;
+  background-color: #6C25FF;
+  border-radius: 50%;
+}
+.radio-label , .radio-option{
+  background-color:#F7F8F9;
+  margin-left:0;
+}
+.signup2{
+  width:335px;
+  height:46px;
+  background-color: #6C25FF;
+  font-size:16px;
+font-weight:500;
+line-height: 17px;
+font-family:"Rubik", sans-serif;
+text-align: center;
+color: #FFFFFF;
+border-radius: 6px;
+border:none;
+margin-top:225px;
+
+
+}
+.login{
+   width:375px;
+  height:812px;
+  background-color: #F7F8F9;
+  border:1px solid black;
+  display:flex;
+  flex-direction: column;
+  font-family:"Rubik", sans-serif;
+ 
+  padding:20px;
+}
+.loginhead{
+  width:188px;
+  font-size:28px;
+font-weight:500;
+line-height: 36px;
+font-family:"Rubik", sans-serif;
+text-align: left;
+color: black;
+}
+.login p{
+   text-align: left;
+font-size:18px;
+font-weight:normal;
+line-height:26px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+opacity: 0.6;
+margin-top:10px;
+}
+.disablebut{
+   width:335px;
+  height:46px;
+  background-color: #CBCBCB;
+  font-size:16px;
+font-weight:500;
+line-height: 17px;
+font-family:"Rubik", sans-serif;
+text-align: center;
+color: #FFFFFF;
+border-radius: 6px;
+border:none;
+/* margin-top:225px; */
+}
+.profile{
+   width:375px;
+  height:812px;
+  background-color: #F7F8F9;
+  border:1px solid black;
+  display:flex;
+  flex-direction: column;
+  font-family:"Rubik", sans-serif;
+ 
+ 
+}
+.profilehead{
+  width:373px;
+  text-transform: capitalize;
+  height:68px;
+  background-color: #FFFFFF;
+  color:#1D2226;
+  font-size:18px;
+  font-weight:400;
+  font-family:"Rubik", sans-serif;
+  line-height:21px;
+  padding-left:20px;
+  padding-top:27px;
+
+}
+.profiledetails{
+  width:335px;
+  height:76px;
+  display:flex;
+   padding-left:20px;
+   margin-top:20px;
+}
+.profileimg{
+  width:70px;
+  height:70px;
+}
+
+.profilename{
+  display:flex;
+  flex-direction: column;
+  margin-left:20px;
+
+}
+.profile p{
+  padding-left:20px;
+    text-align: left;
+font-size:14px;
+font-weight:normal;
+line-height:22px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+margin-top:10px;
+border-bottom:2px dotted #CBCBCB;
+padding-bottom:20px;
+}
+.name{
+text-align: left;
+font-size:15px;
+font-weight: 500;
+
+line-height:19px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+}
+.email{
+text-align: left;
+font-size:14px;
+font-weight: 500;
+font-weight:400;
+line-height:19px;
+font-family:"Rubik", sans-serif;
+letter-spacing: 0px;
+color: #1D2226;
+}
+.icon {
+    position:relative;
+    top: -23px;
+    left: 53px;
+    width: 21px;
+    height: 21px;
+}
+
+
+
+
